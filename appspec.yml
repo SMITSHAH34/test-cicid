@@ -2,15 +2,4 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/express-app
-hooks:
-  ApplicationStop:
-    - location: application_stop.sh
-      timeout: 300
-  BeforeInstall:
-    - location: before_install.sh
-      timeout: 300
-  ApplicationStart:
-    - location: application_start.sh
-      timeout: 300
-      
+    destination: /
